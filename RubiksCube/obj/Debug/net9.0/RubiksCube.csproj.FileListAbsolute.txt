@@ -1,0 +1,14 @@
+C:\Users\pierr\RiderProjects\RubiksCube\RubiksCube\bin\Debug\net9.0\RubiksCube.exe
+C:\Users\pierr\RiderProjects\RubiksCube\RubiksCube\bin\Debug\net9.0\RubiksCube.deps.json
+C:\Users\pierr\RiderProjects\RubiksCube\RubiksCube\bin\Debug\net9.0\RubiksCube.runtimeconfig.json
+C:\Users\pierr\RiderProjects\RubiksCube\RubiksCube\bin\Debug\net9.0\RubiksCube.dll
+C:\Users\pierr\RiderProjects\RubiksCube\RubiksCube\bin\Debug\net9.0\RubiksCube.pdb
+C:\Users\pierr\RiderProjects\RubiksCube\RubiksCube\obj\Debug\net9.0\RubiksCube.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pierr\RiderProjects\RubiksCube\RubiksCube\obj\Debug\net9.0\RubiksCube.AssemblyInfoInputs.cache
+C:\Users\pierr\RiderProjects\RubiksCube\RubiksCube\obj\Debug\net9.0\RubiksCube.AssemblyInfo.cs
+C:\Users\pierr\RiderProjects\RubiksCube\RubiksCube\obj\Debug\net9.0\RubiksCube.csproj.CoreCompileInputs.cache
+C:\Users\pierr\RiderProjects\RubiksCube\RubiksCube\obj\Debug\net9.0\RubiksCube.dll
+C:\Users\pierr\RiderProjects\RubiksCube\RubiksCube\obj\Debug\net9.0\refint\RubiksCube.dll
+C:\Users\pierr\RiderProjects\RubiksCube\RubiksCube\obj\Debug\net9.0\RubiksCube.pdb
+C:\Users\pierr\RiderProjects\RubiksCube\RubiksCube\obj\Debug\net9.0\RubiksCube.genruntimeconfig.cache
+C:\Users\pierr\RiderProjects\RubiksCube\RubiksCube\obj\Debug\net9.0\ref\RubiksCube.dll
