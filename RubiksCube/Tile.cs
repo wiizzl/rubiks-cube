@@ -22,7 +22,7 @@ public class Tile
 
         for (int k = 0; k < TileHeight; k++)
         {
-            Console.SetCursorPosition(x + 4, y + k + 3);
+            Console.SetCursorPosition(x + 2, y + k + 3);
             Console.Write(new string(' ', TileWidth));
         }
     }
