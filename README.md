@@ -20,7 +20,7 @@
 ### Quick start
 
 ```bash
-git clone https://github.com/wiizzl/RubiksCube && cd RubiksCube
+git clone https://github.com/wiizzl/rubiks-cube && cd rubiks-cube
 
 # Build the project
 dotnet build
