@@ -2,7 +2,7 @@
     <img width="100%" src=".github/assets/banner.png" alt="Banner for Rubik's Cube Game.">
 </p>
 <p align="center">
-    <b>An open-source Rubik's Cube game implemented in C#.</b>
+    <b>A Rubik's Cube game implemented in C#.</b>
 </p>
 
 ## ✨ Features
