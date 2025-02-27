@@ -5,6 +5,7 @@ public class Face
     public static int FaceSize = 3;
     
     public Tile[,] Tiles { get; set; }
+    
     public int TileHeight { get; set; }
     public int TileWidth { get; set; }
 

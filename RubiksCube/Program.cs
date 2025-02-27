@@ -4,15 +4,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Jeu du Rubik's Cube - CTRL+C pour quitter");
-        Console.WriteLine("F - Avant, B - Derrière, R - Droite, L - Gauche, U - Haut, D - Bas (Shift pour l'anti-horraire)");
+        Console.WriteLine("Rubik's Cube - CTRL+C to leave");
+        Console.WriteLine("F - Front, B - Back, R - Right, L - Left, U - Up, D - Down (Shift for anti-clockwise)");
 
         Cube cube = new Cube(3, 5);
         
-        do
+        while (true)
         {
             cube.Display();
             
+            // Read the key pressed, and do not print the character in the console
             ConsoleKeyInfo readKey = Console.ReadKey(true);
             
             bool shiftPressed = readKey.Modifiers == ConsoleModifiers.Shift;
@@ -38,6 +39,6 @@ class Program
                     if (shiftPressed) cube.DPrime(); else cube.D();
                     break;
             } 
-        } while (true);
+        }
     }
 }
