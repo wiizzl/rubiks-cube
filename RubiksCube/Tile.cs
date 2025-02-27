@@ -8,10 +8,10 @@ public class Tile
     public int TileHeight { get; set; }
     public int TileWidth { get; set; }
 
-    public Tile(string color, ConsoleColor consoleColor, int tileHeight, int tileWidth)
+    public Tile(string color, int tileHeight, int tileWidth)
     {
         Color = color;
-        ConsoleColor = consoleColor;
+        ConsoleColor = GetColor(color);
         TileHeight = tileHeight;
         TileWidth = tileWidth;
     }
@@ -27,7 +27,7 @@ public class Tile
         }
     }
     
-    public static ConsoleColor GetColor(string colorCode)
+    public ConsoleColor GetColor(string colorCode)
     {
         return colorCode switch
         {

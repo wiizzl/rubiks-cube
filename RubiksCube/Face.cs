@@ -19,7 +19,7 @@ public class Face
         {
             for (int j = 0; j < FaceSize; j++)
             {
-                Tiles[i, j] = new Tile(color, Tile.GetColor(color), tileHeight, tileWidth);
+                Tiles[i, j] = new Tile(color, tileHeight, tileWidth);
             }
         }
     }
