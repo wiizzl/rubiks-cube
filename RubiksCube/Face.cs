@@ -20,7 +20,7 @@ public class Face
         {
             for (int j = 0; j < FaceSize; j++)
             {
-                Tiles[i, j] = new Tile(color, tileHeight, tileWidth);
+                Tiles[i, j] = new Tile(color, tileHeight, tileWidth, FaceSize * i + j + 1);
             }
         }
     }
@@ -40,16 +40,18 @@ public class Face
     
     public void RotateClockwise()
     {
-        Tile[,] newTiles = new Tile[FaceSize, FaceSize];
-        
-        for (int i = 0; i < FaceSize; i++)
-        {
-            for (int j = 0; j < FaceSize; j++)
-            {
-                newTiles[j, FaceSize - 1 - i] = Tiles[i, j];
-            }
-        }
-        
-        Tiles = newTiles;
+        // Corners
+        Tile temp = Tiles[0, 0];
+        Tiles[0, 0] = Tiles[0, 2];
+        Tiles[0, 2] = Tiles[2, 2];
+        Tiles[2, 2] = Tiles[2, 0];
+        Tiles[2, 0] = temp;
+
+        // Edges
+        temp = Tiles[1, 0];
+        Tiles[1, 0] = Tiles[0, 1];
+        Tiles[0, 1] = Tiles[1, 2];
+        Tiles[1, 2] = Tiles[2, 1];
+        Tiles[2, 1] = temp;
     }
 }

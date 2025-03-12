@@ -5,26 +5,33 @@ public class Tile
     public string Color { get; set; }
     public ConsoleColor ConsoleColor { get; set; }
     
-    public int TileHeight { get; set; }
-    public int TileWidth { get; set; }
+    public int Height { get; set; }
+    public int Width { get; set; }
 
-    public Tile(string color, int tileHeight, int tileWidth)
+    public int Id { get; set; }
+
+    public Tile(string color, int height, int width, int id)
     {
         Color = color;
         ConsoleColor = GetColor(color);
-        TileHeight = tileHeight;
-        TileWidth = tileWidth;
+        Height = height;
+        Width = width;
+        Id = id;
     }
 
     public void Display(int x, int y)
     {
         Console.BackgroundColor = ConsoleColor;
 
-        for (int k = 0; k < TileHeight; k++)
+        for (int k = 0; k < Height; k++)
         {
-            Console.SetCursorPosition(x + 2, y + k + 3);
-            Console.Write(new string(' ', TileWidth));
+            Console.SetCursorPosition(x, y + k);
+            Console.Write(new string(' ', Width));
         }
+        
+        Console.SetCursorPosition(x + Width / 2, y + Height / 2);
+        Console.ForegroundColor = ConsoleColor.Black;
+        Console.Write(Id);
     }
     
     public ConsoleColor GetColor(string colorCode)

@@ -16,7 +16,7 @@ class Program
             // Read the key pressed, and do not print the character in the console
             ConsoleKeyInfo readKey = Console.ReadKey(true);
             
-            bool shiftPressed = readKey.Modifiers == ConsoleModifiers.Shift;
+            bool shiftPressed = readKey.Modifiers.HasFlag(ConsoleModifiers.Shift);
             
             switch (readKey.Key)
             {
