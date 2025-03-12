@@ -41,17 +41,9 @@ public class Face
     public void RotateClockwise()
     {
         // Corners
-        Tile temp = Tiles[0, 0];
-        Tiles[0, 0] = Tiles[0, 2];
-        Tiles[0, 2] = Tiles[2, 2];
-        Tiles[2, 2] = Tiles[2, 0];
-        Tiles[2, 0] = temp;
+        (Tiles[0, 0], Tiles[0, 2], Tiles[2, 2], Tiles[2, 0]) = (Tiles[2, 0], Tiles[0, 0], Tiles[0, 2], Tiles[2, 2]);
 
         // Edges
-        temp = Tiles[1, 0];
-        Tiles[1, 0] = Tiles[0, 1];
-        Tiles[0, 1] = Tiles[1, 2];
-        Tiles[1, 2] = Tiles[2, 1];
-        Tiles[2, 1] = temp;
+        (Tiles[1, 0], Tiles[0, 1], Tiles[1, 2], Tiles[2, 1]) = (Tiles[2, 1], Tiles[1, 0], Tiles[0, 1], Tiles[1, 2]);
     }
 }

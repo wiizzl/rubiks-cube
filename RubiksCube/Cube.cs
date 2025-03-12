@@ -44,27 +44,27 @@ public class Cube
     
     public void B()
     {
-        
+        Back.RotateClockwise();
     }
 
     public void R()
     {
-        
+        Right.RotateClockwise();
     }
 
     public void L()
     {
-        
+        Left.RotateClockwise();
     }
 
     public void U()
     {
-        
+        Top.RotateClockwise();
     }
 
     public void D()
     {
-        
+        Bottom.RotateClockwise();
     }
     
     public void FPrime() { F(); F(); F(); }
