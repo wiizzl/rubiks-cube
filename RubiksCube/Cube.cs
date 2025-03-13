@@ -40,31 +40,48 @@ public class Cube
     public void F()
     {
         Front.RotateClockwise();
+        
+        (Top.Tiles[2, 0], Top.Tiles[2, 1], Top.Tiles[2, 2], Right.Tiles[0, 0], Right.Tiles[1, 0], Right.Tiles[2, 0], Bottom.Tiles[0, 2], Bottom.Tiles[0, 1], Bottom.Tiles[0, 0], Left.Tiles[2, 2], Left.Tiles[1, 2], Left.Tiles[0, 2]) = 
+        (Left.Tiles[2, 2], Left.Tiles[1, 2], Left.Tiles[0, 2], Top.Tiles[2, 0], Top.Tiles[2, 1], Top.Tiles[2, 2], Right.Tiles[0, 0], Right.Tiles[1, 0], Right.Tiles[2, 0], Bottom.Tiles[0, 2], Bottom.Tiles[0, 1], Bottom.Tiles[0, 0]);
     }
-    
+
     public void B()
     {
         Back.RotateClockwise();
+        
+        (Top.Tiles[0, 2], Top.Tiles[0, 1], Top.Tiles[0, 0], Left.Tiles[0, 0], Left.Tiles[1, 0], Left.Tiles[2, 0], Bottom.Tiles[2, 0], Bottom.Tiles[2, 1], Bottom.Tiles[2, 2], Right.Tiles[2, 2], Right.Tiles[1, 2], Right.Tiles[0, 2]) = 
+        (Right.Tiles[2, 2], Right.Tiles[1, 2], Right.Tiles[0, 2], Top.Tiles[0, 2], Top.Tiles[0, 1], Top.Tiles[0, 0], Left.Tiles[0, 0], Left.Tiles[1, 0], Left.Tiles[2, 0], Bottom.Tiles[2, 0], Bottom.Tiles[2, 1], Bottom.Tiles[2, 2]);
     }
 
     public void R()
     {
         Right.RotateClockwise();
+        
+        (Top.Tiles[0, 2], Top.Tiles[1, 2], Top.Tiles[2, 2], Front.Tiles[0, 2], Front.Tiles[1, 2], Front.Tiles[2, 2], Bottom.Tiles[0, 2], Bottom.Tiles[1, 2], Bottom.Tiles[2, 2], Back.Tiles[2, 0], Back.Tiles[1, 0], Back.Tiles[0, 0]) = 
+        (Back.Tiles[2, 0], Back.Tiles[1, 0], Back.Tiles[0, 0], Top.Tiles[0, 2], Top.Tiles[1, 2], Top.Tiles[2, 2], Front.Tiles[0, 2], Front.Tiles[1, 2], Front.Tiles[2, 2], Bottom.Tiles[0, 2], Bottom.Tiles[1, 2], Bottom.Tiles[2, 2]);
     }
 
     public void L()
     {
         Left.RotateClockwise();
+        
+        (Top.Tiles[0, 0], Top.Tiles[1, 0], Top.Tiles[2, 0], Back.Tiles[2, 2], Back.Tiles[1, 2], Back.Tiles[0, 2], Bottom.Tiles[0, 0], Bottom.Tiles[1, 0], Bottom.Tiles[2, 0], Front.Tiles[0, 0], Front.Tiles[1, 0], Front.Tiles[2, 0]) = 
+        (Front.Tiles[0, 0], Front.Tiles[1, 0], Front.Tiles[2, 0], Top.Tiles[0, 0], Top.Tiles[1, 0], Top.Tiles[2, 0], Back.Tiles[2, 2], Back.Tiles[1, 2], Back.Tiles[0, 2], Bottom.Tiles[0, 0], Bottom.Tiles[1, 0], Bottom.Tiles[2, 0]);
     }
 
     public void U()
     {
         Top.RotateClockwise();
+        
+        (Front.Tiles[0, 0], Front.Tiles[0, 1], Front.Tiles[0, 2], Right.Tiles[0, 0], Right.Tiles[0, 1], Right.Tiles[0, 2], Back.Tiles[0, 0], Back.Tiles[0, 1], Back.Tiles[0, 2], Left.Tiles[0, 0], Left.Tiles[0, 1], Left.Tiles[0, 2]) = 
+        (Left.Tiles[0, 0], Left.Tiles[0, 1], Left.Tiles[0, 2], Front.Tiles[0, 0], Front.Tiles[0, 1], Front.Tiles[0, 2], Right.Tiles[0, 0], Right.Tiles[0, 1], Right.Tiles[0, 2], Back.Tiles[0, 0], Back.Tiles[0, 1], Back.Tiles[0, 2]);
     }
 
     public void D()
     {
         Bottom.RotateClockwise();
+        (Front.Tiles[2, 0], Front.Tiles[2, 1], Front.Tiles[2, 2], Left.Tiles[2, 0], Left.Tiles[2, 1], Left.Tiles[2, 2], Back.Tiles[2, 0], Back.Tiles[2, 1], Back.Tiles[2, 2], Right.Tiles[2, 0], Right.Tiles[2, 1], Right.Tiles[2, 2]) = 
+        (Right.Tiles[2, 0], Right.Tiles[2, 1], Right.Tiles[2, 2], Front.Tiles[2, 0], Front.Tiles[2, 1], Front.Tiles[2, 2], Left.Tiles[2, 0], Left.Tiles[2, 1], Left.Tiles[2, 2], Back.Tiles[2, 0], Back.Tiles[2, 1], Back.Tiles[2, 2]);
     }
     
     public void FPrime() { F(); F(); F(); }
