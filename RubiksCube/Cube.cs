@@ -14,15 +14,20 @@ public class Cube
 
     public Cube(int tileHeight, int tileWidth)
     {
-        Top = new Face("W", tileHeight, tileWidth);
-        Bottom = new Face("Y", tileHeight, tileWidth);
-        Front = new Face("R", tileHeight, tileWidth);
-        Back = new Face("O", tileHeight, tileWidth);
-        Left = new Face("G", tileHeight, tileWidth);
-        Right = new Face("B", tileHeight, tileWidth);
-        
         TileHeight = tileHeight;
         TileWidth = tileWidth;
+
+        Reset();
+    }
+    
+    public void Reset()
+    {
+        Top = new Face("W", TileHeight, TileWidth);
+        Bottom = new Face("Y", TileHeight, TileWidth);
+        Front = new Face("R", TileHeight, TileWidth);
+        Back = new Face("O", TileHeight, TileWidth);
+        Left = new Face("G", TileHeight, TileWidth);
+        Right = new Face("B", TileHeight, TileWidth);
     }
 
     public void Display()
@@ -35,6 +40,38 @@ public class Cube
         Back.Display(9 * TileWidth, 3 * TileHeight + 3);
         Left.Display(0, 3 * TileHeight + 3);
         Right.Display(6 * TileWidth, 3 * TileHeight + 3);
+    }
+    
+    
+    public void Shuffle(int numberOfMoves)
+    {
+        List<string> moves = [
+            "F", "FPrime", "B", "BPrime", "R", "RPrime", "L", "LPrime", "U", "UPrime", "D", "DPrime"
+        ];
+
+        for (int i = 0; i < numberOfMoves; i++)
+        {
+            switch (moves[new Random().Next(moves.Count)])
+            {
+                case "F": F(); break;
+                case "FPrime": FPrime(); break;
+                case "B": B(); break;
+                case "BPrime": BPrime(); break;
+                case "R": R(); break;
+                case "RPrime": RPrime(); break;
+                case "L": L(); break;
+                case "LPrime": LPrime(); break;
+                case "U": U(); break;
+                case "UPrime": UPrime(); break;
+                case "D": D(); break;
+                case "DPrime": DPrime(); break;
+            }
+        }
+    }
+
+    public void Delay(int delay)
+    {
+        Thread.Sleep(delay);
     }
     
     public void F()
